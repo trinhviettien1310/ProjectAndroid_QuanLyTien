@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Quản Lý Chi Tiêu</string>
+    <string name="nav_chart">biểu đồ</string>
+    <string name="nav_cp">Chi Phí</string>
+    <string name="nav_tn">Thu Nhập</string>
+    <string name="nav_account">tài khoản</string>
+    <string name="nav_category">danh mục</string>
+    <string name="nav_remine">nhắc nhở</string>
+    <string name="nav_setting">cài đặt</string>
+    <string name="nav_calendar">Lịch</string>
+    <string name="nav_logout">đăng xuất</string>
+    <string name="nav_drawer_open">nav drawer open</string>
+    <string name="nav_drawer_close">nav drawer close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="acount">Tài khoản</string>
+    <string name="note">Ghi chú</string>
+    <string name="date">Ngày</string>
+    <string name="color">Màu sắc</string>
+    <string name="add">Thêm</string>
+    <string name="delete">Xóa</string>
+    <string name="update">Lưu</string>
+    <string name="createTransfer">Thêm chuyển khoản</string>
+    <string name="updateTransfer">Chỉnh sửa chuyển khoản</string>
+    <string name="next">Tiếp theo</string>
+    <string name="sNext">Tiếp theo</string>
+    <string name="missOTP">Gửi lại mã</string>
+    <string name="sOTP">Nhập mã otp của bạn</string>
+    <string name="rePassword">Nhập lại mật khẩu</string>
+    <string name="sLogin">Nhập thông tin đăng nhập của bạn</string>
+    <string name="loginNoti">Đăng nhập để lưu thông tin của bạn</string>
+    <string name="btnLogin">Đăng nhập</string>
+    <string name="registerNoti">Nhập thông tin đăng ký của bạn</string>
+    <string name="btnRegister">Đăng ký</string>
+    <string name="btnForgetPass">Quên mật khẩu</string>
+    <string name="emailTitle">Nhập địa chỉ email</string>
+    <string name="passTitle">Nhập Mật khẩu</string>
+    <string name="otpTitle">Nhập Mã OTP để xác nhận thông tin</string>
+    <string name="optionLogin">Đăng nhập với</string>
+    <string name="forgetPassNoti">Để đặt lại mật khẩu của bạn, vui lòng nhập địa chỉ email bạn đã đăng ký</string>
+    <string name="default_web_client_id" translatable="false">480698369056-4eo2vj5199det9fa80c8t6f8ss2udh4l.apps.googleusercontent.com</string>
+    <string name="name">Tên</string>
+    <string name="facebook_app_id">713218444067852</string>
+    <string name="fb_login_protocol_scheme">fb713218444067852</string>
+    <string name="facebook_client_token">56789</string>
+    <string name="sAccount">Tài khoản</string>
+    <string name="sDanhMuc">Danh mục</string>
+    <string name="sNote">Ghi chú</string>
+
+
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="btnLich">Lịch</string>
+    <string name="btnLichCT">Lịch</string>
+</resources>

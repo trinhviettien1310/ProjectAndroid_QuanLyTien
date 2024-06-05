@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".giaodich.ExpenseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <EditText
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:id="@+id/edtTienChi"
+            style="@style/edtMoney"
+            android:hint="0"
+            android:inputType="number"/>
+        <TextView
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="VND" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linearLayoutFragmentGD" >
+        <TextView
+            style="@style/textViewGhiChu"
+            android:text="@string/sAccount" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvTaiKhoan"
+            style="@style/tvDataTime"
+            android:layout_marginBottom="20dp"
+            android:text="Chưa chọn"/>
+        <TextView
+            style="@style/textViewGhiChu"
+            android:text="@string/sDanhMuc" />
+        <TextView
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:id="@+id/tvThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/rcvGDChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvNgayGDChi"
+            style="@style/tvDataTimeGiaoDich"
+            android:text="Chọn ngày" />
+        <TextView
+            style="@style/textViewGhiChu"
+            android:text="@string/sNote" />
+        <EditText
+            android:id="@+id/edtGhiChuChi"
+            android:textColor="#000"
+            style="@style/textViewGhiChu"
+            android:hint="@string/sNote" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnThemChiPhi"
+        style="@style/btnSave"
+        android:text="Thêm" />
+
+</FrameLayout>

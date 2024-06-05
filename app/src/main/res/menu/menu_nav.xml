@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_chart"
+            android:title="@string/nav_chart"
+            android:icon="@drawable/baseline_chart"/>
+
+        <item android:id="@+id/nava_acount"
+            android:title="@string/nav_account"
+            android:icon="@drawable/baseline_money"/>
+        <item android:id="@+id/nava_cate"
+            android:title="@string/nav_category"
+            android:icon="@drawable/baselinet_align"/>
+        <item android:id="@+id/nava_remine"
+            android:title="@string/nav_remine"
+            android:icon="@drawable/baseline_notifications_24"/>
+
+        <item android:id="@+id/nava_cal"
+            android:title="@string/nav_calendar"
+            android:icon="@drawable/baseline_calendar"/>
+        <item android:id="@+id/nava_louout"
+            android:title="@string/nav_logout"
+            android:icon="@drawable/baseline_logout"/>
+    </group>
+
+</menu>

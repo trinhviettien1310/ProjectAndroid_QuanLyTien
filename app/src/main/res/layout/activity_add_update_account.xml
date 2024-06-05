@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Update_AccountActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolBar">
+        <Button
+            android:id="@+id/btnBackAddAccount"
+            style="@style/btnBack" />
+
+        <TextView
+            android:id="@+id/tvToolBar"
+            style="@style/tvToolBar" />
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/edtIDAccount"
+        style="@style/textView"
+        android:hint="id"
+        android:visibility="gone" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtMoney"
+            style="@style/edtMoney"
+            android:hint="0"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VND"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/linearLayout">
+
+        <TextView
+            style="@style/textView"
+            android:text="Tên tài khoản" />
+
+        <EditText
+            android:id="@+id/edtNameAccount"
+            style="@style/textView"
+            android:layout_marginBottom="20dp"
+            android:hint="Nhập tên tài khoản" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Biểu tượng" />
+        <TextView
+            android:id="@+id/tvCheckIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/revCategoryExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/tvCheckColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Màu sắc: "
+                android:textSize="18dp" />
+
+            <View
+                android:id="@+id/viewColor"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btnSelectColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1in"
+                android:text="Chọn màu" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        style="@style/btnDelete" />
+
+    <Button
+        android:id="@+id/btnAddAccount"
+        style="@style/btnSave"
+        android:text="@string/add" />
+
+</LinearLayout>

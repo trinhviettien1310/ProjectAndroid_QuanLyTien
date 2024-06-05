@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditGiaoDichActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolBar">
+        <Button
+            android:id="@+id/btnBackList"
+            style="@style/btnBack" />
+        <TextView
+            style="@style/tvToolBar"
+            android:text="Chi tiết Giao Dịch" />
+        <Button
+            android:id="@+id/btnEditGD"
+            style="@style/btnEdit"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout style="@style/linearLayout">
+        <TextView
+            style="@style/textView"
+            android:text="Tài Khoản" />
+        <TextView
+            style="@style/textView"
+            android:id="@+id/tvTenTK"
+            android:text="Tài Khoản" />
+        <TextView
+            style="@style/textView"
+            android:text="Số Tiền" />
+        <EditText
+            style="@style/textView"
+            android:id="@+id/edtSoTien"
+            android:layout_marginBottom="20dp"
+            android:text="200 đ"/>
+        <TextView
+            style="@style/textView"
+            android:text="Danh Mục" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content" >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/civChiTiet"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+            <TextView
+                android:id="@+id/tvTenDanhMuc"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Tên Danh Mục"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textView"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/tvNgayGD"
+            style="@style/textView"
+            android:layout_marginBottom="20dp"
+            android:text="ngày giao dịch" />
+
+        <TextView
+            style="@style/textView"
+            android:text="@string/note" />
+        <EditText
+            android:id="@+id/edtNote"
+            style="@style/textView"
+            android:hint="@string/note" />
+        <Button
+            android:id="@+id/btnDelGD"
+            android:text="Xóa"
+            style="@style/btnDelete"/>
+    </LinearLayout>
+
+</LinearLayout>

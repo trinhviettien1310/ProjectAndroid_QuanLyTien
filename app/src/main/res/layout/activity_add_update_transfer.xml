@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Update_TransferActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolBar">
+
+        <Button
+            android:id="@+id/btnBackTransfer"
+            style="@style/btnBack" />
+
+        <TextView
+            android:id="@+id/tvToolTransfer"
+            style="@style/tvToolBar" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout style="@style/linearLayout">
+
+        <EditText
+            android:id="@+id/edtIDTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Chuyển từ tài khoản" />
+
+        <TextView
+            android:id="@+id/tvFromAccount"
+            style="@style/tvDataTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chưa chọn" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Chuyển vào tài khoản" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvToAccount"
+            style="@style/tvDataTime"
+            android:text="Chưa chọn" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Chuyển vào tài khoản" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtMoneyAccount"
+                style="@style/edtMoney"
+                android:hint="0"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VND"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textView"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/tvDateAccount"
+            style="@style/tvDataTime"
+            android:text="Chọn ngày" />
+
+        <TextView
+            style="@style/textView"
+            android:text="@string/note" />
+
+        <EditText
+            android:id="@+id/edtNoteAccount"
+            style="@style/tvDataTime"
+            android:hint="@string/note" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddTransfer"
+        style="@style/btnSave"
+        android:text="Thêm" />
+
+</LinearLayout>

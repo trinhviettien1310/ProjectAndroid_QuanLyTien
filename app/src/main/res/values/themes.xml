@@ -1,0 +1,353 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ProjectVer3" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryVariant">@color/green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryContainer">@color/green</item>
+    </style>
+
+    <!--ToolBar-->
+    <style name="toolBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_tvheader</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--TextView Toolbar-->
+    <style name="tvToolBar">
+        <item name="android:layout_width">210dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="btnBack">
+        <item name="android:drawableLeft">@drawable/back</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="btnEdit">
+        <item name="android:drawableRight">@drawable/edit</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+    <style name="textView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="linearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="btnDelete">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <style name="roundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
+
+
+    <!--    textview Bold-->
+    <style name="textviewBold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">30dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+    </style>
+    <!--Button Account-->
+    <style name="btnAccount">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/bg_btnaccount</item>
+    </style>
+    <!--LinearLayout Account-->
+    <style name="linearAcount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--TextView DataTime-->
+    <style name="tvDataTime">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#5B9371</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <!--TextView-->
+    <style name="textViewBlack">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--EditText Money-->
+    <style name="edtMoney">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+    <!--Button Save-->
+    <style name="btnSave">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:background">@drawable/bg_btn_save</item>
+    </style>
+    <!--Button Edit-->
+
+
+    <style name="Theme.ProjectVer3" parent="Base.Theme.ProjectVer3" />
+
+    //
+
+    <!--TextView hiển thị thông báo-->
+    <style name="textViewNoti">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--Nút đăng nhập-->
+    <style name="btnlogin">
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:background">@drawable/bg_btnlogin</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <!--Nút đăng ký-->
+    <style name="btnregister">
+        <item name="android:radius">100dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#5B9371</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <!--header-->
+    <style name="header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/bg_tvheader</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!--button back-->
+    <style name="btnBackLogin">
+        <item name="android:drawableLeft">@drawable/back</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-55dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!--TextView tiêu đề-->
+    <style name="textviewTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">30dp</item>
+    </style>
+
+    <!--EditText nhập thông tin-->
+    <style name="edtInputInfor">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">380dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">#5B9371</item>
+    </style>
+
+    <style name="btnOptionsLogin">
+        <item name="android:radius">1000dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#5B9371</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/fb_icon</item>
+    </style>
+
+    //new
+    <!--Button Expense, Income-->
+    <style name="btnExpense_Income">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:textColor">#C5BFBF</item>
+    </style>
+    <!--EditText Money-->
+    <!--    <style name="edtMoney">-->
+    <!--        <item name="android:backgroundTint">#5B9371</item>-->
+    <!--        <item name="android:inputType">number</item>-->
+    <!--        <item name="android:layout_height">wrap_content</item>-->
+    <!--        <item name="android:layout_width">100dp</item>-->
+    <!--        <item name="android:gravity">center</item>-->
+    <!--        <item name="android:textSize">20dp</item>-->
+    <!--        <item name="android:textColor">#5B9371</item>-->
+    <!--    </style>-->
+    <!--LinearLayout-->
+    <!--    <style name="linearLayout" >-->
+    <!--        <item name="android:layout_width">match_parent</item>-->
+    <!--        <item name="android:layout_height">wrap_content</item>-->
+    <!--        <item name="android:layout_marginTop">50dp</item>-->
+    <!--        <item name="android:layout_marginLeft">20dp</item>-->
+    <!--        <item name="android:layout_marginRight">20dp</item>-->
+    <!--        <item name="android:orientation">vertical</item>-->
+    <!--        <item name="android:textSize">20dp</item>-->
+    <!--    </style>-->
+    <!--TextView-->
+    <style name="textViewGhiChu" >
+        <item name="android:backgroundTint">#5B9371</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--TextView DataTime-->
+    <style name="tvDataTimeGiaoDich" >
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/bg_tvdate</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    <!--    &lt;!&ndash;Button Save&ndash;&gt;-->
+    <!--    <style name="btnSave" >-->
+    <!--        <item name="android:layout_width">200dp</item>-->
+    <!--        <item name="android:layout_height">wrap_content</item>-->
+    <!--        <item name="android:layout_gravity">bottom|center_horizontal</item>-->
+    <!--        <item name="android:background">@drawable/bg_btnlogin</item>-->
+    <!--    </style>-->
+
+    <style name="linearLayoutFragmentGD" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+    <!--ToolBar2-->
+    <style name="toolBar2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/green</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+    <style name="btnBackGD">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:text">@string/sBackGD</item>
+        <item name="android:drawableLeft">@drawable/back</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <string name="sBackGD">Thêm giao dịch</string>
+
+
+
+    <!--iconBackground-->
+    <style name="iconBackground">
+        <item name="android:background">@drawable/bg_icon</item>
+    </style>
+    <style name="bg_review_color">
+        <item name="android:background">@drawable/bg_review_color</item>
+    </style>
+    <style name="btn_lich_chuyenthang">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#009688</item>
+        <item name="android:background">@drawable/btn_lich_chuyenthang</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <!--button back-->
+    <style name="btnBackLich">
+        <item name="android:drawableLeft">@drawable/baseline_arrow_back_24</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-55dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <!--header-->
+    <style name="headerLich">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/bg_tvheader_lich</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

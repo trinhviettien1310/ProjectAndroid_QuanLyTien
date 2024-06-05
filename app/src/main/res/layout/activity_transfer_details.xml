@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TransferDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolBar">
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/btnBack" />
+
+        <TextView
+            style="@style/tvToolBar"
+            android:text="Chi tiết Chuyển khoản" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout style="@style/linearLayout">
+
+        <TextView
+            android:id="@+id/tvTransferID"
+            style="@style/textView"
+            android:layout_marginBottom="20dp"
+            android:text="ID"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Chuyển từ tài khoản" />
+
+        <TextView
+            android:id="@+id/tvTransferFromAccount"
+            style="@style/textViewBlack"
+            android:layout_marginBottom="20dp"
+
+            android:text="Ngân hàng"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Chuyển vào tài khoản" />
+
+        <TextView
+            android:id="@+id/tvTransferToAccount"
+            style="@style/textViewBlack"
+            android:layout_marginBottom="20dp"
+            android:text="Ngân hàng"
+            android:textSize="20dp" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Số tiền chuyển khoản" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            style="@style/textViewBlack"
+            android:layout_marginBottom="20dp"
+            android:text="200 đ" />
+
+        <TextView
+            style="@style/textView"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/tvDateTransfer"
+            style="@style/textViewBlack"
+            android:layout_marginBottom="20dp"
+            android:text="ngày" />
+
+        <TextView
+            style="@style/textView"
+            android:text="@string/note" />
+
+        <TextView
+            android:id="@+id/tvNoteTransfer"
+            style="@style/textViewBlack"
+            android:layout_marginBottom="20dp"
+            android:text="@string/note" />
+
+        <Button
+            android:id="@+id/btnDeleteTransfer"
+            style="@style/btnDelete" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Update_Remind">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolBar">
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/btnBack" />
+
+        <TextView
+            android:id="@+id/tvToolbar"
+            style="@style/tvToolBar"
+            android:text="" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout style="@style/linearLayout">
+
+        <EditText
+            android:id="@+id/edtIDRemind"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:hint="IDRemind" />
+        <TextView
+            style="@style/textView"
+            android:text="Tên lời nhắc" />
+
+        <EditText
+            android:id="@+id/edtNameRemind"
+            style="@style/textView"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/name" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Tần suất nhắc nhở" />
+
+        <Spinner
+            android:id="@+id/spNhacNho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Giờ" />
+
+        <TextView
+            android:format12Hour="k:m"
+            android:id="@+id/tvTime"
+            style="@style/tvDataTime"
+            android:text="Chọn giờ" />
+
+        <TextView
+            style="@style/textView"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/tvDataTime"
+            android:text="Chọn ngày" />
+
+        <TextView
+            style="@style/textView"
+            android:text="Ghi chú" />
+
+        <EditText
+            android:id="@+id/edtNoteRemind"
+            style="@style/textView"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/note" />
+        <Button
+            android:id="@+id/btnDeleteRemind"
+            style="@style/btnDelete"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCreateRemind"
+        style="@style/btnSave"
+        android:text="" />
+
+</LinearLayout>

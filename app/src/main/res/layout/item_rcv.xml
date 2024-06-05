@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:id="@+id/layout_item">
+    <ImageView
+        android:id="@+id/iconChiPhi"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#03A9F4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@+id/iconChiPhi"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        >
+        <TextView
+            android:id="@+id/tvtenChiPhi"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="name"/>
+
+        <TextView
+            android:id="@+id/tvChiPhi"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="so tien 100000"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

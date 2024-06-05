@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.LoginActivity">
+
+    <!--header-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView style="@style/header" />
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/btnBackLogin"
+            android:text="@string/btnLogin"
+            android:background="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/sLogin"
+            style="@style/textViewNoti"/>
+        <TextView
+            style="@style/textviewTitle"
+            android:text="@string/emailTitle" />
+        <EditText
+            android:id="@+id/edtEmailDN"
+            style="@style/edtInputInfor"/>
+        <TextView
+            style="@style/textviewTitle"
+            android:text="@string/passTitle"/>
+        <EditText
+            android:selectAllOnFocus="false"
+
+
+            android:id="@+id/edtPassDN"
+            style="@style/edtInputInfor"
+            android:inputType="textPassword"/>
+        <ImageView
+            android:id="@+id/ivHien"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hien"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="18dp"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/ivAn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/an"
+            android:layout_marginTop="-50dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="18dp"/>
+        <Button
+            android:id="@+id/btnQMK"
+            android:text="@string/btnForgetPass"
+            style="@style/btnregister"
+            android:background="?android:attr/selectableItemBackground" />
+        <Button
+            android:id="@+id/btnLoginLogin"
+            android:layout_marginTop="15dp"
+            android:text="@string/btnLogin"
+            style="@style/btnlogin"></Button>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</LinearLayout>
